@@ -33,29 +33,50 @@ AS A COMPANY WE HAVE SOME QUESTIONS
 CODE (with explaination) ===========>
 
 
-create database (name_for_db);                                                  {creating a DB and naming it}
+{creating a DB and naming it}
+===>
 
-use (name_of_db);                                                               {for get that DB is use}
-                                                                                 
+create database (name_for_db);                                                  
+
+{for get that DB is use}
+===>
+use (name_of_db);                                                               
+                                                                                
+{creating another table for golduser}
+(  two parameters - userid && gold_signup_date
+ what type of data with coloum name its gonna be 
+ EX. int, varchar and (value length)
+ )       
+ ===>
  
-select * from sales;                                                            {retriving compleat data but its empty now}
+CREATE TABLE goldusers_signup(    
+userid INT(2),                                                                  
+gold_signup_date date                                                                           
+)                                                                                 
+;                                                                       
 
-CREATE TABLE goldusers_signup(                                                  {creating another table for golduser}
-userid INT(2),                                                                  (  two parameters - userid && gold_signup_date
-gold_signup_date date                                                              what type of data with coloum name its gonna be               
-)                                                                                  EX. int, varchar and (value length)
-;                                                                               )
+{inserting data into table(gold_signup_date)}
+===>
 
+INSERT INTO goldusers_signup(userid, gold_signup_date)                          
 
-INSERT INTO goldusers_signup(userid, gold_signup_date)                          {inserting data into table(gold_signup_date)}
+(EX.. date should be like yyyy-mm-dd)
+(!!! values should be according to specified earlier)
+===>
+
 VALUES                
-(1,'2017-12-12'),                                                               (!!! values should be according to specified earlier)
-(3,'2017-12-12')                                                                (EX.. date should be like yyyy-mm-dd)
+(1,'2017-12-12'),                                                               
+(3,'2017-12-12')                     
 ;
 
-CREATE TABLE sales(userid integer,created_date date,product_id integer);        {creating another table for sales}
+{creating another table for sales}
+===>
+CREATE TABLE sales(userid integer,created_date date,product_id integer);        
 
-INSERT INTO sales(userid,created_date,product_id)                               {inserting data into table(sales)}
+{inserting data into table(sales)}
+===>
+
+INSERT INTO sales(userid,created_date,product_id)  
 VALUES (1,'04-19-2017',2),
 (3,'2019-8-18',1),
 (2,'2020-2-20',3),
@@ -73,16 +94,28 @@ VALUES (1,'04-19-2017',2),
 (2,'2017-8-08',2),
 (2,'2018-1-10',3);
 
-CREATE TABLE product(product_id integer,product_name text,price integer);       {creating another table for product details}
-INSERT INTO product(product_id,product_name,price)                              {inserting data into table(product)}
-VALUES
-(1,'p1',980),                                                                   (parameters id, product name(p1...), price)
+{creating another table for product details}
+===>
+
+CREATE TABLE product(product_id integer,product_name text,price integer);       
+
+
+{inserting data into table(product)}
+(parameters id, product name(p1...), price)
+===>
+
+INSERT INTO product(product_id,product_name,price)                              
+(1,'p1',980),                                                                   
 (2,'p2',870),
 (3,'p3',330);
 
-select * from  product;                                                         (viewing inserted data)
+
+(viewing inserted data)
+===>
+select * from  product;                                                         
 select * from  sales;
 select * from  goldusers_signup;
+
 
 
 =================================================
