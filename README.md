@@ -18,7 +18,7 @@ Integration with other tools: SQL is widely used and is often integrated with ot
 
 Overall, learning SQL is essential for anyone working with data analytics. It provides a powerful tool for extracting, manipulating, and analyzing data, and is widely used in the industry.
 
-========================================================================================================================================
+===================================================================================
 
 AS A COMPANY WE HAVE SOME QUESTIONS
 1] We have to check how much money is spended by each user ?
@@ -27,10 +27,8 @@ AS A COMPANY WE HAVE SOME QUESTIONS
 4] what is most sold product ?
 5] How many times each user bought product 2
 
-
-=================================================
+***
 [SQL PROJECT ON DATA ANALYTICS OF SELLS (SWIGGY)]
-=================================================
 
 CODE (with explaination) ===========>
 
