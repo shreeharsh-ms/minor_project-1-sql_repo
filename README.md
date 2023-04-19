@@ -86,7 +86,9 @@ select * from  goldusers_signup;
 
 
 =================================================
+
 [SOLVING QUESTIONS WITH SQL QUARRIES]
+
 =================================================
 
 
