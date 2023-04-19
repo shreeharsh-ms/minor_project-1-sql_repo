@@ -2,9 +2,7 @@
 Simple hands on start with MySQL and SQL to understand basic concepts of DBMS
 
 
-=====================================================================
 Why SQL is important to learn in order to solve analytics of data..??
-======================================================================
 
 SQL (Structured Query Language) is an important tool for working with data, particularly in the context of data analytics. Here are a few reasons why learning SQL is important for data analytics:
 
